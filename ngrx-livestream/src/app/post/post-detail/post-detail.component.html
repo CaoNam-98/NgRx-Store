@@ -1,0 +1,9 @@
+<p>post-detail works!</p>
+
+  <div *ngIf="vm$ | async as vm">
+    <div *ngIf="!vm.isLoading">
+      {{ vm.post.id }} - {{ vm.post.caption }}
+    </div>
+    
+  </div>
+
